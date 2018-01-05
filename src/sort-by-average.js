@@ -4,8 +4,7 @@ const sortByAverage = arrOfNums => {
 
   const average = sumOfArr(arrOfNums) / arrOfNums.length
   const absoluteDistanceFromAverage = absoluteDistanceFrom(average)
-  const sortFunc = (a, b) =>
-    absoluteDistanceFromAverage(a) - absoluteDistanceFromAverage(b)
+  const sortFunc = (a, b) => absoluteDistanceFromAverage(a) - absoluteDistanceFromAverage(b)
 
   return arrOfNums.sort(sortFunc)
 }
